@@ -16,5 +16,13 @@
 		</classes>
 	</test>
 
+	<test name="editProfile">
+		<parameter name="testUsername" value="KhanTest17"/>
+		<parameter name="testLocation" value="Cebu City, Central Visayas, Philippines"/>
+		<parameter name="testBio" value="This is a test of the emergency Bio system."/>
+		<classes>
+			<class name="test.EditProfileTest"/>
+		</classes>
+	</test>
 
 </suite>
