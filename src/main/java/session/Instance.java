@@ -16,7 +16,7 @@ public class Instance {
     public static void chromeInitConfigAndNavigateTo(String url) {
 
         System.setProperty("webdriver.chrome.driver",
-            "C:\\Users\\tr_lnd_user\\Desktop\\chromedriver.exe");
+            "C:\\Users\\tr_lnd_user\\Desktop\\SeleniumAutomation\\chromedriver.exe");
         driver = new ChromeDriver();
         driver.get(url);
     }

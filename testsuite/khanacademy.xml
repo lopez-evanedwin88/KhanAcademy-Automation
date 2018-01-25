@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd"?>
+
+<suite name="khanacademy">
+	<test name="setup">
+		<parameter name="browser" value="chrome"/>
+		<parameter name="url" value="https://www.khanacademy.org/partner-content/pixar/start/introduction/v/pipeline-video"/>
+
+		<classes>
+			<class name="setup.Setup"/>
+		</classes>
+	</test>
+	<test name="main">
+		<classes>
+			<class name="test.VideoTest"/>
+		</classes>
+	</test>
+
+
+</suite>

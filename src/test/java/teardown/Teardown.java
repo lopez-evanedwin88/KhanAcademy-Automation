@@ -4,7 +4,7 @@ import org.testng.annotations.AfterSuite;
 
 import session.Instance;
 
-public class teardown {
+public class Teardown {
 
     @AfterSuite
     public void finish(){

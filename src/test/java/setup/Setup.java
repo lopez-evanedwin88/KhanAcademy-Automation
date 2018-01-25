@@ -5,7 +5,7 @@ import org.testng.annotations.Parameters;
 
 import session.Instance;
 
-public class setup {
+public class Setup {
 
     @BeforeTest
     @Parameters({"browser", "url"})

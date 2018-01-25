@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [khanacademy]">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="url" value="https://www.khanacademy.org/partner-content/pixar/start/introduction/v/pipeline-video"/>
+  <test name="main(failed)">
+    <classes>
+      <class name="setup.Setup">
+        <methods>
+          <include name="init"/>
+        </methods>
+      </class> <!-- setup.Setup -->
+      <class name="test.VideoTest">
+        <methods>
+          <include name="init"/>
+          <include name="validateWritingAComment"/>
+          <include name="checkVideoIsPlaying"/>
+        </methods>
+      </class> <!-- test.VideoTest -->
+    </classes>
+  </test> <!-- main(failed) -->
+</suite> <!-- Failed suite [khanacademy] -->
