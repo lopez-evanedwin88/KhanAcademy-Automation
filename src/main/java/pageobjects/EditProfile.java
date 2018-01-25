@@ -36,8 +36,6 @@ public class EditProfile extends Instance{
 		WebDriverWait wait = new WebDriverWait(Instance.driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(saveButton));
 		saveButton.click();
-		//Actions action = new Actions(driver);
-		//action.moveToElement(saveButton).click().build().perform();
 	}
 
 	public void populateRealName(String name) {
