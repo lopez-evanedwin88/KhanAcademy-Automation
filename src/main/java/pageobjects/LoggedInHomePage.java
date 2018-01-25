@@ -14,6 +14,14 @@ public class LoggedInHomePage extends Instance{
 
 	@FindBy(xpath="//*[@id=\"_kareact_0\"]/div/div[2]/div[1]/div/div[1]/div/div/div[2]/a")
 	WebElement editProfile;
+	@FindBy(className="nickname")
+	WebElement realName;
+	@FindBy(className="username")
+	WebElement username;
+	@FindBy(className="bio")
+	WebElement bio;
+	@FindBy(className="location-text")
+	WebElement location;
 
 	public LoggedInHomePage() {
 		ajaxElementLocatorFactory = new AjaxElementLocatorFactory(driver, 10);
@@ -25,6 +33,30 @@ public class LoggedInHomePage extends Instance{
 		wait.until(ExpectedConditions.visibilityOf(editProfile));
 		Actions action = new Actions(driver);
 		action.moveToElement(editProfile).click().build().perform();
+	}
+
+	public WebElement getRealName() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(realName));
+		return realName;
+	}
+
+	public WebElement getUsername() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(username));
+		return username;
+	}
+
+	public WebElement getBio() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(bio));
+		return bio;
+	}
+
+	public WebElement getLocation() {
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		wait.until(ExpectedConditions.visibilityOf(location));
+		return location;
 	}
 
 }

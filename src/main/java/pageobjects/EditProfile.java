@@ -49,6 +49,7 @@ public class EditProfile extends Instance{
 	public void populateUsername(String name) {
 		WebDriverWait wait = new WebDriverWait(Instance.driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(username));
+		username.clear();
 		username.sendKeys(name);
 	}
 
@@ -66,6 +67,7 @@ public class EditProfile extends Instance{
 	public void populateBio(String description) {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.visibilityOf(bio));
+		bio.clear();
 		bio.sendKeys(description);
 	}
 }
